@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="My Ever Ever First Game"
+config/name="Project-2D"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
