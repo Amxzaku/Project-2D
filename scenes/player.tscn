@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://m0krqqkpmf41"]
+
+[ext_resource type="Texture2D" uid="uid://dm7t8v2gn3typ" path="res://assets/sprites/Swordsman/Idle_2.png" id="1_ibt6e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5yup"]
+atlas = ExtResource("1_ibt6e")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xbkl"]
+atlas = ExtResource("1_ibt6e")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3j0k"]
+atlas = ExtResource("1_ibt6e")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pfa2o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m5yup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xbkl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n3j0k")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a045g"]
+radius = 5.0
+
+[node name="Player" type="CharacterBody2D"]
+z_index = 5
+collision_layer = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -12)
+scale = Vector2(0.234375, 0.234375)
+sprite_frames = SubResource("SpriteFrames_pfa2o")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("CircleShape2D_a045g")
