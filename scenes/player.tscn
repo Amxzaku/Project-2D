@@ -393,7 +393,7 @@ scale = Vector2(0.234375, 0.234375)
 sprite_frames = SubResource("SpriteFrames_pfa2o")
 animation = &"attack_3"
 autoplay = "idle"
-frame_progress = 0.0385309
+frame_progress = 0.274058
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
