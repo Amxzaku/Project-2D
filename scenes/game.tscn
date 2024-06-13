@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://e6di6ciu2caw"]
+[gd_scene load_steps=18 format=3 uid="uid://e6di6ciu2caw"]
 
 [ext_resource type="PackedScene" uid="uid://m0krqqkpmf41" path="res://scenes/player.tscn" id="1_tppec"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_qtl8u"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://qy7072m37ay0" path="res://scenes/coin.tscn" id="5_jlr8f"]
 [ext_resource type="PackedScene" uid="uid://ckcx4gn152cmh" path="res://scenes/killzone.tscn" id="6_qjivr"]
 [ext_resource type="PackedScene" uid="uid://cmavcfne7ywod" path="res://scenes/enemy_slime.tscn" id="7_klwx7"]
+[ext_resource type="PackedScene" uid="uid://dkeclt3va2nml" path="res://scenes/controls.tscn" id="8_cj3ra"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_11vl4"]
 texture = ExtResource("3_y1xtg")
@@ -555,3 +556,7 @@ position = Vector2(192, -73)
 
 [node name="Enemy Slime" parent="." instance=ExtResource("7_klwx7")]
 position = Vector2(121, 17)
+
+[node name="UI Controls" type="Node2D" parent="."]
+
+[node name="Controls" parent="UI Controls" instance=ExtResource("8_cj3ra")]
