@@ -443,7 +443,8 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_5tqg2"]
-length = 0.001
+length = 3.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -451,10 +452,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(196, 22)]
+"values": [Vector2(196, 22), Vector2(325, 22)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -463,10 +464,10 @@ tracks/1/path = NodePath("../Platform4:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(574, 22)]
+"values": [Vector2(574, 22), Vector2(356, 22)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ofnwk"]
@@ -518,6 +519,7 @@ position = Vector2(196, 22)
 libraries = {
 "": SubResource("AnimationLibrary_ofnwk")
 }
+autoplay = "RESET"
 
 [node name="Platform4" parent="Platforms" instance=ExtResource("4_m11if")]
 position = Vector2(574, 22)
