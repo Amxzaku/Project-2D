@@ -1,22 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://dkeclt3va2nml"]
+[gd_scene load_steps=5 format=3 uid="uid://dkeclt3va2nml"]
 
 [ext_resource type="Texture2D" uid="uid://cwp13w8t04ijx" path="res://assets/ui/shadedLight24.png" id="1_fuwjc"]
 [ext_resource type="Texture2D" uid="uid://bltg38mo4owf2" path="res://assets/ui/shadedLight25.png" id="2_srkop"]
 [ext_resource type="Texture2D" uid="uid://ceifi5gs528ju" path="res://assets/ui/shadedLight45.png" id="3_18nlv"]
+[ext_resource type="Texture2D" uid="uid://bp1qhbbxayhj0" path="res://assets/ui/shadedLight49.png" id="4_g8kn7"]
 
 [node name="Controls" type="CanvasLayer"]
 
 [node name="left" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.705882)
 position = Vector2(96, 493)
 texture_normal = ExtResource("1_fuwjc")
 action = "left"
 
 [node name="right" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.705882)
 position = Vector2(218, 495)
 texture_normal = ExtResource("2_srkop")
 action = "right"
 
 [node name="jump" type="TouchScreenButton" parent="."]
-position = Vector2(968, 495)
+modulate = Color(1, 1, 1, 0.705882)
+position = Vector2(972, 434)
 texture_normal = ExtResource("3_18nlv")
 action = "jump"
+
+[node name="attack" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.705882)
+position = Vector2(954, 571)
+rotation = -3.14159
+texture_normal = ExtResource("4_g8kn7")
+action = "attack"
