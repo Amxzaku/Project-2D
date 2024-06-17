@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b84fa6aby5eb1"]
+[gd_scene load_steps=3 format=3 uid="uid://cqu72x3cl8a0g"]
 
-[ext_resource type="Texture2D" uid="uid://bgdgyvyvgk1lu" path="res://assets/sprites/platforms.png" id="1_o400n"]
+[ext_resource type="Texture2D" uid="uid://bgdgyvyvgk1lu" path="res://assets/sprites/platforms.png" id="1_eibp0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4hprx"]
 size = Vector2(32, 9)
@@ -8,7 +8,7 @@ size = Vector2(32, 9)
 [node name="Platform" type="AnimatableBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_o400n")
+texture = ExtResource("1_eibp0")
 region_enabled = true
 region_rect = Rect2(16, 0, 32, 10)
 
