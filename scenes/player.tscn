@@ -260,9 +260,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yw74b")
 }],
-"loop": false,
+"loop": true,
 "name": &"dead",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -274,9 +274,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cmugy")
 }],
-"loop": false,
+"loop": true,
 "name": &"hurt",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -290,7 +290,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 10.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -317,7 +317,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0hnsx")
 }],
-"loop": false,
+"loop": true,
 "name": &"jump",
 "speed": 10.0
 }, {
@@ -346,9 +346,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kcbly")
 }],
-"loop": false,
+"loop": true,
 "name": &"run",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -375,7 +375,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_nf7ts")
 }],
-"loop": false,
+"loop": true,
 "name": &"walk",
 "speed": 10.0
 }]
@@ -391,10 +391,9 @@ collision_layer = 2
 position = Vector2(-1, -12)
 scale = Vector2(0.234375, 0.234375)
 sprite_frames = SubResource("SpriteFrames_pfa2o")
-animation = &"attack_1"
+animation = &"run"
 autoplay = "idle"
-frame = 5
-frame_progress = 1.0
+frame_progress = 0.138687
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://wp7jeq6via5q"]
+
+[ext_resource type="Texture2D" uid="uid://bgdgyvyvgk1lu" path="res://assets/sprites/platforms.png" id="1_wseo5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ij5s"]
+size = Vector2(32, 8)
+
+[node name="Platform_Brown_Long" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wseo5")
+region_enabled = true
+region_rect = Rect2(16, 16, 32, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5ij5s")
+one_way_collision = true
