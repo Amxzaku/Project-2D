@@ -1,4 +1,7 @@
 extends CharacterBody2D
+
+class_name Player
+
 const SPEED = 100.0
 const JUMP_VELOCITY = -250.0
 
@@ -6,6 +9,8 @@ const JUMP_VELOCITY = -250.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var animated_sprite = $AnimatedSprite2D
+
+var curhealth: int = 3
 
 
 func _physics_process(delta):
@@ -29,9 +34,6 @@ func _physics_process(delta):
 		animated_sprite.flip_h = true
 
 
-
-
-
 	#Play Animation
 	if is_on_floor():
 		if direction == 0:
@@ -40,8 +42,8 @@ func _physics_process(delta):
 			animated_sprite.play("run")
 	else:
 		animated_sprite.play("jump")
-	
-	
+
+#Apply Movement
 	if direction:
 		velocity.x = direction * SPEED
 	else:
@@ -49,3 +51,8 @@ func _physics_process(delta):
 
 	move_and_slide()
 
+
+func _on_hurt_box_area_entered(area):
+	if area.name == "hitBox":
+		curhealth -= 1
+		print_debug(curhealth)

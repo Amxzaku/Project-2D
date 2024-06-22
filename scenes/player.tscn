@@ -391,9 +391,9 @@ collision_layer = 2
 position = Vector2(-1, -12)
 scale = Vector2(0.234375, 0.234375)
 sprite_frames = SubResource("SpriteFrames_pfa2o")
-animation = &"run"
+animation = &"hurt"
 autoplay = "idle"
-frame_progress = 0.138687
+frame_progress = 0.190494
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
