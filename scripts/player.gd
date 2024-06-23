@@ -10,8 +10,6 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var animated_sprite = $AnimatedSprite2D
 
-var curhealth: int = 3
-
 
 func _physics_process(delta):
 
@@ -51,8 +49,3 @@ func _physics_process(delta):
 
 	move_and_slide()
 
-
-func _on_hurt_box_area_entered(area):
-	if area.name == "hitBox":
-		curhealth -= 1
-		print_debug(curhealth)
