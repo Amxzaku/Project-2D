@@ -428,7 +428,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(160, -19)]
+"values": [Vector2(158, -13)]
 }
 
 [sub_resource type="Animation" id="Animation_akb30"]
@@ -445,7 +445,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(160, -19), Vector2(160, -75)]
+"values": [Vector2(158, -13), Vector2(158, -85)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wxmeb"]
@@ -586,7 +586,7 @@ unique_name_in_owner = true
 position = Vector2(16, -32)
 
 [node name="Coin2" parent="Level 1/Coins" instance=ExtResource("5_jlr8f")]
-position = Vector2(160, -97)
+position = Vector2(158, -97)
 
 [node name="Coin3" parent="Level 1/Coins" instance=ExtResource("5_jlr8f")]
 position = Vector2(77, -3)
@@ -598,10 +598,22 @@ position = Vector2(325, -5)
 position = Vector2(572, -5)
 
 [node name="Coin6" parent="Level 1/Coins" instance=ExtResource("5_jlr8f")]
-position = Vector2(288, -110)
+position = Vector2(249, -106)
 
 [node name="Coin7" parent="Level 1/Coins" instance=ExtResource("5_jlr8f")]
-position = Vector2(472, -119)
+position = Vector2(331, -107)
+
+[node name="Coin11" parent="Level 1/Coins" instance=ExtResource("5_jlr8f")]
+position = Vector2(357, -107)
+
+[node name="Coin12" parent="Level 1/Coins" instance=ExtResource("5_jlr8f")]
+position = Vector2(385, -107)
+
+[node name="Coin13" parent="Level 1/Coins" instance=ExtResource("5_jlr8f")]
+position = Vector2(413, -107)
+
+[node name="Coin14" parent="Level 1/Coins" instance=ExtResource("5_jlr8f")]
+position = Vector2(442, -107)
 
 [node name="Coin8" parent="Level 1/Coins" instance=ExtResource("5_jlr8f")]
 position = Vector2(677, 0)
@@ -623,7 +635,7 @@ position = Vector2(113, 31)
 position = Vector2(17, -14)
 
 [node name="Platform_Green_Short2" parent="Level 1/Platforms" instance=ExtResource("9_f21x3")]
-position = Vector2(160, -19)
+position = Vector2(158, -13)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Level 1/Platforms/Platform_Green_Short2"]
 libraries = {
@@ -709,6 +721,10 @@ position = Vector2(994, 4)
 [connection signal="body_entered" from="Level 1/Coins/Coin5" to="HUD" method="_on_coin_body_entered"]
 [connection signal="body_entered" from="Level 1/Coins/Coin6" to="HUD" method="_on_coin_body_entered"]
 [connection signal="body_entered" from="Level 1/Coins/Coin7" to="HUD" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="Level 1/Coins/Coin11" to="HUD" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="Level 1/Coins/Coin12" to="HUD" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="Level 1/Coins/Coin13" to="HUD" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="Level 1/Coins/Coin14" to="HUD" method="_on_coin_body_entered"]
 [connection signal="body_entered" from="Level 1/Coins/Coin8" to="HUD" method="_on_coin_body_entered"]
 [connection signal="body_entered" from="Level 1/Coins/Coin9" to="HUD" method="_on_coin_body_entered"]
 [connection signal="body_entered" from="Level 1/Coins/Coin10" to="HUD" method="_on_coin_body_entered"]

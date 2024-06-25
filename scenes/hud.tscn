@@ -93,7 +93,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"coin_idle",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [node name="HUD" type="CanvasLayer"]
@@ -116,3 +116,5 @@ position = Vector2(20.5, 22)
 scale = Vector2(2.3125, 2.5)
 sprite_frames = SubResource("SpriteFrames_wop5s")
 animation = &"coin_idle"
+autoplay = "coin_idle"
+frame_progress = 0.484354
